@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#login-section, #main-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#vacancies-list, #vehicle-list {
+    margin-top: 20px;
+}
+
+.vacancy-item, .vehicle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.vacancy-info, .vehicle-info {
+    flex-grow: 1;
+}
+
+.vacancy-actions, .vehicle-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.vacancy-actions button, .vehicle-actions button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.vacancy-actions .edit-btn, .vehicle-actions .edit-btn {
+    background-color: #f0ad4e;
+}
+
+.vacancy-actions .delete-btn, .vehicle-actions .delete-btn {
+    background-color: #d9534f;
+}
+
+.vacancy-actions .pay-btn, .vehicle-actions .pay-btn {
+    background-color: #5bc0de;
+}
+
+.vehicle-timer {
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-done {
+    color: green;
+    font-weight: bold;
+}
+
+.status-occupied {
+    color: red;
+}
+
+.status-unavailable {
+    color: orange;
+}
+
+.status-reserved {
+    color: blue;
+}
+
+.status-available {
+    color: green;
+}
