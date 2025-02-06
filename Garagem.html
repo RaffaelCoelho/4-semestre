@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-section">
+        <h2>Login</h2>
+        <button id="create-account">Criar Conta</button>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="main-section" style="display:none;">
+        <h2>Gerenciamento de Estacionamento</h2>
+        <div id="vacancies-section">
+            <h3>Vagas (10 no total)</h3>
+            <div id="vacancies-list"></div>
+        </div>
+        <div id="vehicle-section">
+            <h3>Adicionar Veículo</h3>
+            <form id="vehicle-form">
+                <input type="text" id="color" placeholder="Cor" required>
+                <input type="text" id="model" placeholder="Modelo" required>
+                <input type="text" id="plate" placeholder="Placa" required>
+                <button type="submit">Adicionar Veículo</button>
+            </form>
+            <div id="vehicle-list"></div>
+        </div>
+        <button id="print-ticket">Imprimir Ticket</button>
+        <button id="print-report">Imprimir Relatório</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
